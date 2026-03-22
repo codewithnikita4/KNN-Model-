@@ -47,7 +47,6 @@ Testing Data: 20%
 💻 Model Implementation
 from sklearn.datasets import load_iris
 from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import StandardScaler
 from sklearn.neighbors import KNeighborsClassifier
 
 # Load dataset
@@ -57,11 +56,6 @@ y = iris.target
 
 # Split data
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
-
-# Feature scaling
-sc = StandardScaler()
-X_train = sc.fit_transform(X_train)
-X_test = sc.transform(X_test)
 
 # KNN model
 model = KNeighborsClassifier(n_neighbors=5)
