@@ -86,6 +86,7 @@ KNN-Iris-Project/
 Try different values of K
 Use cross-validation
 Visualize decision boundaries
+
 🙌 Conclusion
 KNN works very well for the Iris dataset and is a great starting point for learning machine learning.
 
